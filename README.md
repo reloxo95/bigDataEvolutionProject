@@ -1,4 +1,4 @@
-## EVOLUTION OF BIG NADA PROJECT ##
+## EVOLUTION OF BIG DATA PROJECT ##
 
 ### INDEX ####
 - Presentation:
@@ -36,6 +36,6 @@
   - Poll of warming enviroment worried
 - CONCLUSIONS:
   - Keep calm
-  - The most important is de design and less importar the way
+  - The most important is de design and less important the way
   - Performance & efficiency go to background
   - Doc all you can

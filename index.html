@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Newbie en un proyecto de BIG DATA - Mugardos 2022</title>
+		<meta name="description" content="Charla Mugardos 2022 sobre la evolución de un proycto de BIG DATA">
+		<meta name="author" content="Christian López - @reloxo95">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!-- 1: HOME -->
+				<section data-background-color="white">
+					<a href="https://www.comunidadeozulo.org/">
+						<img src="assets/comunidadeozulo_logo.png" style="height: 100px;">
+					</a>
+					<h3>Un newbie dentro del BIG DATA</h3>
+					<p>
+						<small>¿Cómo la frase: "quiero guardar tweets y sacar alguna conclusión" termina en un proyecto BIG DATA 
+							con una base de datos de más de 300 millones de filas</small>
+					</p>
+					<br>
+					<p>
+						<small>Christian López - 
+							<a href="https://twitter.com/christianlrcalo" target="_blank">@christianlrcalo</a> - 
+							<a href="mailto:info@chirstianlr.es" target="_blank">info@christianlr.es</a>
+						</small>
+					</p>
+				</section>
+
+				<!-- 2: HOW AM I -->
+				<section data-background-color="white">
+					<h3>Sobre Christian</h3>
+					<ul>
+						<li>Ingeniero Informático - USC</li>
+						<li>Master of Applied Data Science - Michigan University</li>
+						<li>Desarrollador Drupal</li>
+						<li>Devops - SysAdmin</li>
+					</ul>
+					<img src="assets/drupal_logo.png" style="height: 80px;">
+					<img src="assets/vuejs_logo.png" style="height: 80px;">
+					<img src="assets/ansible_logo.png" style="height: 80px;">
+					<img src="assets/php_logo.png" style="height: 80px;">
+					<img src="assets/leaflet_logo.png" style="height: 80px;">
+				</section>
+
+				<!-- 3: PHASE1 - Requirements & Project start -->
+				<section>
+					<!-- 3.1: Context -->
+					<section>
+						<h2>Fase1 - Origen del proyecto</h2>
+						<p>Verano 2017</p>
+						<p>Carrera terminada en 2016</p>
+						<p>Máster terminado en 2018</p>
+						<p class="fragment">"Tenemos que montar algo para recuperar datos de las redes y que lo vean..."</p>
+						<p class="fragment"><b>... en menos de un mes</b></p>
+					</section>
+					<!-- 3.2: Start -->
+					<section data-background="https://media.giphy.com/media/ViMvFTWtJaJeTVGxzM/giphy.gif">
+						<h2 style="color: white">Bueno, vamoh a ello!</h2>
+					</section>
+					<!-- 3.3: First Steps -->
+					<section>
+						<h2>Primeros pasos</h2>
+						<ul>
+							<li>Java - Php - Python? => Tweepy</li>
+							<li>Facebook - Twitter - Instagram? => Twitter</li>
+							<li>SQL - NoSQL? => PostgreSQL</li>
+							<li>Entrega? => PgAdmin con consultas pre-cargadas</li>
+						</ul>
+					</section>
+					<!-- 3.4: Requirements -->
+					<section>
+						<h3>Primera entrega</h3>
+						<p>Método de recopilación (cuenta gratuíta - límites)</p>
+						<p>Relación Tweet - Usuario</p>
+						<p>Búsqueda según hashtags y palabras clave</p>
+						<p>Optimización de almacenamiento (no insertar repetidos)</p>
+						<p>Principio de automatización - independencia</p>
+					</section>
+					<section>
+						<h2>Feedback?</h2>
+						<p class="fragment">
+							<img src="https://media.giphy.com/media/3o72FcJmLzIdYJdmDe/giphy.gif" width="500"/>
+						</p>
+						<p class="fragment">Quiero más!</p>
+						<p class="fragment">Y podemos?, y podemos?, y si?</p>
+					</section>
+				</section>
+
+				<!-- 4: PHASE2 - More dimensions -->
+				<section>
+					<!-- 4.1: New requirements -->
+					<section>
+						<h2>Fase2 - Más dimensiones</h2>
+						<p>Geolocalización: tweets y usuarios</p>
+						<p>Datos macro y socioeconómicos</p>
+						<p>Datos meteorológicos</p>
+						<p>Configuración de búsuqueda dinámica</p>
+						<p>Diferentes grupos de búsqueda</p>
+						<p class="fragment">GIP + Dashboard (Gráficas - Informes y Pdfs)</p>
+					</section>
+					<!-- 4.2: Start -->
+					<section data-background="https://media.giphy.com/media/3o7qDSOvfaCO9b3MlO/giphy.gif">
+						<h2 style="color: white">Venga chao!</h2>
+					</section>
+					<!-- 4.3: First Steps -->
+					<section>
+						<h2>Problemas</h2>
+						<ul>
+							<li>Ejecución estática => servicios/automática</li>
+							<li>Servidor por grupo de búsuqeda => uno gobal</li>
+							<li>Relación/fusión de datos de todas las dimensiones</li>
+							<li>Actualización versiones Tweepy - Api Twitter</li>
+							<li>Generador informes + estadísticas + API + Dashboard</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- 5: PHASE3 - ML, SentimentAnalysis -->
+				<section>
+					<!-- 5.1: New requirements -->
+					<section>
+						<h2>Fase3 - ML y SentimentAnalysis</h2>
+						<p>"Saber sentimiento/preocupación sobre un X en este dataset"</p>
+						<p>Si puede ser tanto en inglés como en español</p>
+						<p>Y además si puede ser dividido en regiones</p>
+						<p class="fragment">AHH! y para el mes que viene</p>
+					</section>
+					<!-- 5.2: Start -->
+					<section data-background="https://media.giphy.com/media/YOkrK8agZLEk2cXeLi/giphy.gif">
+						<h2 style="color: white">Noop!, Esta vez nop!</h2>
+					</section>
+					<!-- 5.3: First Steps -->
+					<section>
+						<h2>Problemas</h2>
+						<ul>
+							<li>No hay nada formateado/ limpio</li>
+							<li>Necesidad de clasificación de datos => mejora de reporting</li>
+							<li>Gran dispersidad de datos (culturas, idiomas, contextos, etc...)</li>
+							<li>Diccionarios/corpus orientados a felicidad (+/-)</li>
+						</ul>
+					</section>
+					<!-- 5.4: Product -->
+					<section>
+						<h2>Entrega</h2>
+						<ul>
+							<li>Restricción a principales países</li>
+							<li>Restricción a 2 idiomas</li>
+							<li>Reorientacion de preocupación hacia felicidad</li>
+							<li>Apoyar el proceso mediante datos estadísticos</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- 6: BONUS PHASE: SOBRADAS -->
+				<section>
+					<h2>FASE extra - Las sobradas</h2>
+					<p class="fragment">ML con video</p>
+					<p class="fragment">Interactuación con mapas</p>
+					<p class="fragment">Encuestras embebidas dinátimcas</p>
+				</section>
+
+				<!-- 7: CONCLUSIONS -->
+				<section>
+					<h2>¿Qué sacamos de esto?</h2>
+					<ul>
+						<li>Hay demasiado humo por ahí</li>
+						<li>El exceso de confianza es peligrosa</li>
+						<li>Aunque no quieras, el rendimiento siempre queda en 2º plano</li>
+						<li>Lo que importa es como se ve y lo bonito que es</li>
+					</ul>
+				</section>
+
+				<!-- 8: END -->
+				<section>
+					<h2>¡GRACIÑAS!</h2>
+					<p>Dudas, ideas, mejoras, etc..</p>
+					<p>info@christianlr.es</p>
+					<p>@christianlrcalo</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
