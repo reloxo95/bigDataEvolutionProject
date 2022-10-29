@@ -22,7 +22,7 @@
 			<div class="slides">
 
 				<!-- 1: HOME -->
-				<section data-background-color="white">
+				<section>
 					<a href="https://www.comunidadeozulo.org/">
 						<img src="assets/comunidadeozulo_logo.png" style="height: 100px;">
 					</a>
@@ -35,10 +35,11 @@
 							<a href="mailto:info@chirstianlr.es" target="_blank">info@christianlr.es</a>
 						</small>
 					</p>
+					<p><small>29-10-2022</small></p>
 				</section>
 
 				<!-- 2: HOW AM I -->
-				<section data-background-color="white">
+				<section>
 					<h3>Sobre Christian</h3>
 					<ul>
 						<li>Ingeniero Informático - USC</li>
@@ -58,11 +59,12 @@
 					<!-- 3.1: Context -->
 					<section>
 						<h2>Fase1 - Origen del proyecto</h2>
-						<p>Verano 2017</p>
+						<p>Carrera terminada en 2016 (ATPSM)</p>
+						<p>Máster terminado en 2018</p>
+						<p class="fragment">Comienzo verano 2017</p>
 						<p class="fragment">"Tenemos que montar algo para recuperar datos de las redes y que lo vean..."</p>
 						<p class="fragment"><b>... y tenemos sobre un mes!</b></p>
-						<p class="fragment">Carrera terminada en 2016</p>
-						<p class="fragment">Máster terminado en 2018</p>
+						
 					</section>
 					<!-- 3.2: Start -->
 					<section data-background="https://media.giphy.com/media/ViMvFTWtJaJeTVGxzM/giphy.gif">
@@ -73,19 +75,19 @@
 						<h2>Primeros pasos</h2>
 						<ul>
 							<li>Análisis - Diseño - Desarrollo - Pruebas => NOP!</li>
-							<li>Java - Php - Python? => Tweepy</li>
-							<li>Facebook - Twitter - Instagram? => Twitter</li>
-							<li>SQL - NoSQL? => PostgreSQL</li>
-							<li>Entrega? => PgAdmin con consultas pre-cargadas</li>
+							<li class="fragment">Java - Php - Python? => Python - Tweepy</li>
+							<li class="fragment">Facebook - Twitter - Instagram? => Twitter</li>
+							<li class="fragment">SQL - NoSQL? => PostgreSQL</li>
+							<li class="fragment">Entrega? => PgAdmin con consultas pre-cargadas</li>
 						</ul>
 					</section>
 					<!-- 3.4: Requirements -->
 					<section>
 						<h3>Primera entrega</h3>
-						<p>Método de recopilación (cuenta gratuíta - límites)</p>
+						<p>Crawler de datos (cuenta gratuíta - límites)</p>
 						<p>Relación Tweet - Usuario</p>
 						<p>Búsqueda según hashtags y palabras clave</p>
-						<p>Optimización de almacenamiento (no insertar repetidos)</p>
+						<p>Optimización de almacenamiento (no repetidos, exclusión)</p>
 						<p>Principio de automatización - independencia</p>
 					</section>
 					<section>
@@ -106,9 +108,10 @@
 						<p>Geolocalización: tweets y usuarios</p>
 						<p>Datos macro y socioeconómicos</p>
 						<p>Datos meteorológicos</p>
-						<p>Configuración de búsuqueda dinámica</p>
+						<p>Datos de género</p>
+						<p>Configuración de búsqueda dinámica</p>
 						<p>Diferentes grupos de búsqueda</p>
-						<p class="fragment"><b>GIP + Dashboard (Gráficas - Informes y Pdfs)</b></p>
+						<p class="fragment"><b>GIPD (Gráficas - Informes - Pdfs y Dashboard)</b></p>
 					</section>
 					<!-- 4.2: Start -->
 					<section data-background="https://media.giphy.com/media/3o7qDSOvfaCO9b3MlO/giphy.gif">
@@ -119,11 +122,17 @@
 						<h2>Problemas</h2>
 						<ul>
 							<li>Ejecución estática => servicios/automática</li>
-							<li>Servidor por grupo de búsuqeda => gestión de recuros (APIs)</li>
+							<li>Servidor por grupo de búsqueda => gestión de recuros (APIs)</li>
 							<li>Relación/fusión de datos de todas las dimensiones</li>
 							<li>Actualización versiones Tweepy - Api Twitter</li>
 							<li>Generador informes + estadísticas + API + Dashboard</li>
 						</ul>
+					</section>
+					<section>
+						<img src="assets/dashboard1.png">
+					</section>
+					<section>
+						<img src="assets/dashboard2.png">
 					</section>
 				</section>
 
@@ -165,24 +174,35 @@
 							<li>Apoyar el proceso mediante datos estadísticos</li>
 						</ul>
 					</section>
+					<section>
+						<img src="assets/informe1.png">
+					</section>
+					<section>
+						<img src="assets/informe2.png">
+					</section>
+					<section>
+						<img src="assets/informe3.png" style="max-height: 500px;">
+					</section>
 				</section>
 
 				<!-- 6: BONUS PHASE: SOBRADAS -->
 				<section>
 					<h2>BONUS - Requisitos extra</h2>
+					<p class="fragment">Quiero un poco de todo en Twitter</p>
 					<p class="fragment">ML con video</p>
 					<p class="fragment">Interactuación con mapas</p>
-					<p class="fragment">Encuestras embebidas dinátimcas</p>
+					<p class="fragment">Encuestras embebidas dinámicas</p>
 				</section>
 
 				<!-- 7: CONCLUSIONS -->
 				<section>
-					<h2>¿Conclusiones del proyecto?</h2>
+					<h2>¿Conclusiones?</h2>
 					<ul>
-						<li class="fragment">Hay demasiado humo por ahí (foros, documentación, ...)</li>
+						<li class="fragment">Hay demasiado humo (foros, documentación, ...)</li>
 						<li class="fragment">La planificación es imposible</li>
-						<li class="fragment">Aunque no quieras, el rendimiento siempre queda en 2º plano</li>
-						<li class="fragment">Lo que importa es como se ve y lo bonito que es</li>
+						<li class="fragment">El rendimiento siempre queda en 2º plano</li>
+						<li class="fragment">Lo que importa es la visualización</li>
+						<li class="fragment">SIEMPRE FALTAN DATOS</li>
 					</ul>
 				</section>
 
